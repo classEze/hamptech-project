@@ -1,0 +1,262 @@
+:root{
+    --nav-bg:#0D121C;
+    --active-link:#448CC2;
+    --hover-link:rgb(240, 219, 219);
+    --nav-button-bg:#4484C24D;
+    --learn-more-bg:#448CC2;
+    --app-margin:1.5rem;
+    --card-shadow: 0px 2px 3px 1px rgb(79, 142, 204);
+}
+
+
+/**********
+** RESETS **
+***********/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    font-family: "Open Sans";
+}
+button{
+    border: none;
+}
+
+/**********
+** LAYOUT STYLES **
+***********/
+.grid-container{
+    display:grid;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.flex-container{
+    display:flex;
+    max-width: 1200px;
+    margin:0 auto
+}
+.flex{
+      display:flex;  
+}
+.flex-col{
+      display:flex;  
+      flex-direction:column;
+}
+.grid{
+      display:grid;  
+}
+.align-center{
+ align-items:center
+}
+.justfy-center{
+    justify-items:center;
+    justify-content:center;
+}
+.justify-between{
+    justify-content:space-between;
+}
+.flex-col{
+    flex-direction:center;
+}
+
+nav.site-nav{
+    min-height:4rem;
+    background-color: var(--nav-bg);
+}
+
+
+
+/**********
+** TEXT STYLES **
+***********/
+.text-white{
+    color:white
+}
+a{
+ color:white
+}
+a:active{
+    color:var(--active-link)
+}
+a:hover{
+    color:var(--hover-link)
+}
+
+
+
+/**********
+** UTILITIES **
+***********/
+.style-none {
+    list-style-type: none;
+}
+.font-bold{
+    font-weight:600;
+}
+.text-center{
+    text-align: center;
+}
+
+.app-card{
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    padding:0.9rem;
+}
+.app-card :first-child{
+text-align: center;
+font-size:  24px;
+font-weight:600;
+margin-bottom: var(--app-margin);
+}
+.margin{
+    margin:var(--app-margin);
+}
+.margin-bottom{
+     margin-bottom:var(--app-margin);   
+}
+.text-lg{
+    font-size: 2rem;
+}
+.text-md{
+    font-size: 1.5rem;
+}
+.text-sm{
+    font-size: 0.8rem;
+}
+.text-xs{
+    font-size: 0.5rem;
+}
+.gap-10{
+    gap:0.8rem;
+}
+
+
+
+/**********
+** DOCUMENT SPECIFIC STYLES **
+***********/
+nav li{
+    display:inline-block;
+    margin:0 1.1rem
+}
+
+nav button{
+    background-color: var(--nav-button-bg);
+    border-radius: 8px ;
+    padding: 10px 10px ;
+    font-size:14px;
+    color: white;
+}
+
+main .hero-section{
+    background:url(./assets/images/hero-img.png) no-repeat center;
+    background-size: cover;
+    min-height:550px;
+    place-items: center;
+}
+div.hero-text{
+ width: 930px;
+ max-width: 90%;
+ text-align: center;
+}
+.hero-text > *{
+ text-align: center;
+ margin-bottom:0.7rem;
+}
+.hero-text button{
+    padding:10px 20px;
+    background-color:var(--learn-more-bg);
+    border-radius: 0.7rem;
+    border:1px dashed white
+}
+.tagline{
+    font-size: 48px;
+    font-weight: 700;
+}
+.hero-text :nth-child(n+2){
+    font-size: 24px;
+}
+.info-cards{
+    width:1024px;
+    max-width: 90%;
+    grid-auto-rows:minmax(234px, auto);
+    grid-template-columns:1fr 1fr;
+    margin:var(--app-margin) auto;
+    gap: 1.2rem;
+}
+.about{
+grid-column:1/3
+}
+.mission{
+grid-column:2/3
+}
+.vision{
+grid-column:1/2
+}
+.projects{
+    place-items: center;
+    padding:1.5rem;
+}
+.projects .slider-container{
+    overflow:hidden;
+    height:356px;
+}
+.projects figure{
+display:inline;
+}
+.projects figure img{
+height:100%;
+object-fit: cover;
+}
+.service-card-container{
+    grid-template-columns:repeat(3,1fr);
+    gap: 0.9rem;
+}
+.service-card{
+    box-shadow: 0px 2px 3px 1px rgb(79, 142, 204);
+    align-items:flex-start;
+    padding:2.5rem 2rem;
+    border-radius: 0.3rem;
+    gap: 1rem;
+}
+.service-card:nth-of-type(2){
+    background: url(/assets/images/procurement-bg.png) no-repeat center;
+    background-size: cover;
+}
+#contact-us{
+    width:1000px;
+    max-width:95%;
+    margin:4rem auto;
+    padding:3rem 5rem;
+    background-color: #F7FAFC;
+    border-radius: 0.7rem;
+    gap:0.7rem;
+    box-shadow: 1px 1px 1px 2px rgb(169, 159, 159);
+}
+
+#contact-us button {
+    padding:0.5rem 2.3rem;
+    background-color: #448CC2;
+    border-radius: 0.3rem;
+}
+
+#contact-us button:hover {
+background-color: #719bbb;
+}
+
+footer{
+   background-color: black;
+   padding:3rem 0; 
+}
+footer section:first-of-type{
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+.border-test{
+    border:3px solid red;
+}
+@media screen and (max-width:400px){
+
+}
