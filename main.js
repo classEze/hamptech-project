@@ -26,7 +26,7 @@ nextButton.addEventListener("click", (evt) => {
 })
 
 hamburger.addEventListener("click", (evt) => {
-    let nextImg = hamburger.getAttribute("src").indexOf("close") === -1 ? "/assets/images/close-icon.png" : "/assets/images/hamburger.jpg"
+    let nextImg = hamburger.getAttribute("src").indexOf("close") === -1 ? "./assets/images/close-icon.png" : "./assets/images/hamburger.jpg"
     hamburger.setAttribute("src",  nextImg);
     mobileMenu.classList.toggle("active");
 });
@@ -35,7 +35,7 @@ hamburger.addEventListener("click", (evt) => {
 [...mobileMenu.children].forEach(childNode => {
     childNode.addEventListener("click", (e) => {
     mobileMenu.classList.toggle("active");
-    hamburger.setAttribute("src", "/assets/images/hamburger.jpg");
+    hamburger.setAttribute("src", "./assets/images/hamburger.jpg");
     })
 })
 
@@ -43,7 +43,7 @@ document.querySelector("main").addEventListener("click", (evt) => {
   evt.stopPropagation();
   if(evt.target.tagName != "ul"){
         mobileMenu.classList.remove("active");
-        hamburger.setAttribute("src", "/assets/images/hamburger.jpg");
+        hamburger.setAttribute("src", "./assets/images/hamburger.jpg");
 
   }
 
