@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="./assets/images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Hamptech Constructions</title> 
 </head>
 <body>
+    <a aria-label="Chat on Whatsapp" href="https://wa.me/2348039472599" target="_blank" style="position:fixed; bottom:1.8rem; border-radius: 1rem; overflow: hidden; right:1.5rem; height:4rem; width:4rem">
+    <img src="./assets/images/whatsapp1.png" alt="Whatsapp link" height="100%" width="100%" style="object-fit: cover;"/>
+    </a>
     <header>
-        <nav class="site-nav">
-            <div class="flex-container align-center justify-between">
-            <section class="flex align-center" style="gap:10px">
+            <nav class="flex-container align-center  justify-between">
+            <section class="flex align-center gap-10">
                 <img src="./assets/images/logo.svg" alt="hamptech logo"> 
-                <img src="./assets/images/site-desc.png" height="38px" width="auto" alt="hamptech description"> 
+                <aside class="text-white">
+                    <h2 style="letter-spacing: 0.2rem;">HAMPTECH</h2>
+                    <h5 style="letter-spacing: 0.05rem;">PROJECTS LIMITED</h5>
+                    <p class="text-sm">RC 7002759</p>
+                </aside>
             </section>
             <section class="nav-links">
                 <ul class="style-none">
                     <li>
-                    <a href="#">
+                    <a href="#hero-area">
                         Home
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                    <a href="#services-area">
                         Services
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                    <a href="#projects-area">
                         Projects
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                    <a href="#about-area">
                         About
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                    <a href="#contact-area">
                         Contact Us
                     </a>
                     </li>
                 </ul>
-
             </section>
-            <section>
-                <Button>
+            <section >
+                <Button class="text-white">
                     Get a quote
                 </Button>
+            <p class="mobile-icons">
+                <img src="./assets//images/hamburger.jpg" alt="menu icon" width="35rem" height="35rem" style="cursor:pointer">
+            </p>
             </section>
-           </div>
         </nav>
+         <ul class="style-none mobile-links flex-col">
+                    <li>
+                    <a href="#hero-area">
+                        Home
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#services-area">
+                        Services
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#projects-area">
+                        Projects
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#about-area">
+                        About
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#contact-area">
+                        Contact Us
+                    </a>
+                    </li>
+                    <li>
+                     <Button class="text-white">
+                    Get a quote
+                    </Button>
+                    </li>
+            </ul>
     </header>
     <main>
-        <section class="hero-section text-white grid">
+        <section class="hero-section text-white grid" id="hero-area">
         <div class="hero-text">
         <p class="tagline">
            Hamptech Projects Limited 
@@ -66,7 +109,7 @@
          </Button>
          </div>
         </section>
-        <section class="info-cards grid-container margin">
+        <section class="info-cards grid-container margin" id="about-area">
             <div class="app-card about flex-col" style="height:100%">
                 <p> About Us</p>
                 <article>
@@ -87,22 +130,26 @@
                 </article>
             </div>
         </section>
-        <section class="projects grid-container">
-            <p class="text-lg font-bold">Our projects</p>
-            <p class="text-md">
+        <section class="projects margin-bottom faint-border" id="projects-area">
+            <p class="text-xl font-bold text-center margin-sm">Our projects</p>
+            <p class="text-md margin-bottom">
                 Vestibulum ullamcorper, elit eget placerat tempus, ex risus mattis sem, quis vestibulum metus augue sit amet lectus. Pellentesque eget metus
             </p>
-            <div class="slider-container">
+            <div class="slider-wrapper">
+            <span class="text-lg">⬅️</span>
+            <div class="slider-container flex">
+                <figure><img src="./assets/images/what-is-it.png" alt="project-image"></figure>
                 <figure><img src="./assets/images/workers-on-site.png" alt="project-image"></figure>
+                <figure><img src="./assets/images/construction-site.png" alt="project-image"></figure>
+                <figure><img src="./assets/images/construction-workers.png" alt="project-image"></figure>
                 <figure><img src="./assets/images/workers-on-site.png" alt="project-image"></figure>
-                <figure><img src="./assets/images/workers-on-site.png" alt="project-image"></figure>
-                <figure><img src="./assets/images/workers-on-site.png" alt="project-image"></figure>
-                <figure><img src="./assets/images/workers-on-site.png" alt="project-image"></figure>
+                <figure><img src="./assets/images/what-is-it.png" alt="project-image"></figure>
             </div>
-
+            <span class="text-lg">➡️</span>
+            </div>
         </section>
-        <section class="services grid-container">
-            <p class="text-lg font-bold text-center margin">Services</p>
+        <section class="services grid-container" id="services-area">
+            <p class="text-xl font-bold text-center margin-sm" >Our Services</p>
             <div class="grid service-card-container">
             <div class="service-card flex-col">
                 <img src="./assets/images/project-mgt-vector.png" height="64px" alt="service image">
@@ -153,36 +200,41 @@
             </div>
             </div>
         </section>
-        <section id="contact-us" class="flex-col align-center">
+        <section class="flex-col align-center" id="contact-area">
             <p class="text-center font-bold text-md">GET IN TOUCH WITH US</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a voluptas aliquid corporis, architecto dolor adipisci odit vitae quisquam explicabo ex ipsam mollitia fuga quas est voluptatum id possimus neque eum inventore! Aspernatur, dolores repellat. Ipsa esse qui non enim ut quisquam deleniti doloribus fugit, illo aut voluptatum amet quos vitae pariatur iure error, eligendi eius laborum! Natus, repellendus. Ipsa deserunt alias vitae magnam. Ea consequuntur amet ducimus reprehenderit suscipit a quis, sed, iusto distinctio tempora voluptatibus dolore. Nostrum ad soluta est corrupti blanditiis sit distinctio odit totam fuga aliquam, quas animi placeat reprehenderit ullam! Consequuntur, nisi ipsam eius labore itaque dolorum commodi in animi porro ipsa laboriosam esse? Placeat quia dolores magnam commodi possimus illo magni sapiente incidunt iure culpa, cum obcaecati numquam nulla aliquid aperiam ex ducimus non assumenda a ipsum quibusdam neque voluptas soluta. Nisi distinctio nam aspernatur molestias officiis, porro, eius, numquam sapiente et pariatur reprehenderit animi neque sint consectetur ipsa quia doloribus obcaecati reiciendis! Minima, accusantium quis adipisci ad alias iure atque quibusdam nesciunt et ducimus debitis delectus itaque laudantium. Magnam quos maxime, libero repudiandae quae natus eligendi fuga excepturi commodi corrupti praesentium harum ullam facilis nesciunt quisquam consectetur labore vitae enim asperiores ut neque!</p>
-            <button class="text-white">
-                Contact Us
-            </button>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a voluptas aliquid corporis, architecto dolor adipisci odit vitae quisquam explicabo ex ipsam mollitia fuga quas est voluptatum id possimus neque eum inventore! Aspernatur, dolores repellat. Ipsa esse qui non enim ut quisquam deleniti doloribus fugit, illo aut voluptatum amet quos vitae pariatur iure error, eligendi eius laborum! Natus, repellendus. Ipsa deserunt alias vitae magnam. Ea consequuntur amet ducimus reprehenderit suscipit a quis, sed, iusto distinctio tempora voluptatibus dolore. Nostrum ad soluta est !</p>
+            <a href="mailto:info@hamptechprojects.org.ng?subject=Hello Hamptech Constructions&cc=hycentochonogor@gmail.com" target="_blank">
+                <button class="text-white">
+                    Contact Us
+                </button>
+            </a>
         </section>
     </main>
     <footer class="text-white">
         <section class="grid-container margin-bottom">
-            <div class="flex-col">
-                <section class="flex align-center" style="gap:10px">
+            <div class="flex-col margin-bottom">
+                <section class="flex align-center">
                 <img src="./assets/images/logo.svg" alt="hamptech logo"> 
-                <img src="./assets/images/site-desc.png" height="38px" width="auto" alt="hamptech description"> 
-            </section> 
+                <aside class="text-white">
+                    <h3 style="letter-spacing: 0.2rem;">HAMPTECH</h3>
+                    <h5 style="letter-spacing: 0.05rem;">PROJECTS LIMITED</h5>
+                    <p class="text-sm">RC 7002759</p>
+                </aside> 
+                </section> 
                 <p>
                 Civil Works, Project Management and general procurement services.
                 </p>
             </div>
-            <div class="flex-col gap-10">
+            <div class="flex-col footer-links">
                <h2>Links</h2>
                <ul class="style-none link-color flex-col gap-10">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#projects-area">Projects</a></li>
+                <li><a href="#services-area">Services</a></li>
+                <li><a href="#about-area">About Us</a></li>
+                <li><a href="#contact-area">Contact</a></li>
                </ul>
             </div>
-            <div class="flex-col gap-10">
+            <div class="flex-col">
                <h2>Contact Info</h2>
                <p>
                 Address: No 16.Omo Oba Olukolu, Lekki, Lagos State, Nigeria.
