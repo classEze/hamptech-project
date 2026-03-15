@@ -1,0 +1,12 @@
+{
+  "name": "hamptech-project",
+  "version": "1.0.0",
+  "description": "Hamptech project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen": "node generator.js"
+  },
+  "author": "meee",
+  "license": "ISC"
+}
