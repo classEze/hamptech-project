@@ -1,0 +1,21 @@
+[
+  "./assets/images/project_1/20230113_114852.jpg",
+  "./assets/images/project_1/20230113_162052.jpg",
+  "./assets/images/project_1/20230113_173633.jpg",
+  "./assets/images/project_1/20230125_084305.jpg",
+  "./assets/images/project_1/20230125_144239.jpg",
+  "./assets/images/project_1/20230128_164125.jpg",
+  "./assets/images/project_1/20230202_115640.jpg",
+  "./assets/images/project_1/20230202_130907.jpg",
+  "./assets/images/project_1/20230204_115011.jpg",
+  "./assets/images/project_1/20230210_113721.jpg",
+  "./assets/images/project_1/20230210_181923.jpg",
+  "./assets/images/project_1/20230210_181934.jpg",
+  "./assets/images/project_1/20230222_103222.jpg",
+  "./assets/images/project_1/20230222_124255.jpg",
+  "./assets/images/project_1/20230302_142519.jpg",
+  "./assets/images/project_1/20230303_171504.jpg",
+  "./assets/images/project_1/20230304_130904.jpg",
+  "./assets/images/project_1/IMG-20230218-WA0009.jpg",
+  "./assets/images/project_1/IMG-20230218-WA0010.jpg"
+]
