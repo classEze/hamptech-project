@@ -214,18 +214,20 @@ ul.mobile-links li{
     padding: 1rem 0;
 }
 main .hero-section{
-    background:url(./assets/images/hero-img.png) no-repeat top left;
+    background:url(./assets/images/batching/b11.jpeg) no-repeat top left;
     background-size: cover;
-    height:32rem;
+    height:56rem;
     place-items: center;
 }
 div.hero-text{
- max-width: 90%;
+ max-width: 80%;
  text-align: center;
 }
 .hero-text > *{
  text-align: center;
  margin-bottom:0.7rem;
+ font-weight: 900;
+
 }
 .hero-text button{
     padding:0.6rem 1.5rem;
@@ -233,8 +235,8 @@ div.hero-text{
     border-radius: 0.7rem;
 }
 .tagline{
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+
 }
 .hero-text :nth-child(n+2){
     font-size: 1.5rem;
