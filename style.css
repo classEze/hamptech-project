@@ -230,9 +230,10 @@ div.hero-text{
 
 }
 .hero-text button{
-    padding:0.6rem 1.5rem;
+    padding:0.4rem 3rem;
     background-color:var(--learn-more-bg);
     border-radius: 0.7rem;
+    font-weight: 500;
 }
 .tagline{
     font-size: 3.5rem;
