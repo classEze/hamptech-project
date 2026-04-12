@@ -4,7 +4,7 @@
     --active-link:#e36994;
     --hover-link:rgb(92, 117, 200);
     --nav-button-bg:#4484C24D;
-    --learn-more-bg:#448CC2;
+    --learn-more-bg:#3c566a;
     --app-margin:1.5rem;
     --header-margin:4.5rem;
     --app-padding:5rem;
@@ -38,6 +38,7 @@ button{
     width:1200px;
     margin:0 auto;
     max-width: 90%;
+    place-items: center;
 }
 
 .flex-container{
@@ -61,6 +62,9 @@ button{
 .align-center{
  align-items:center
 }
+.align-baseline{
+ align-items:baseline
+}
 .justfy-center{
     justify-items:center;
     justify-content:center;
@@ -73,13 +77,13 @@ button{
 }
 
 header{
-    height:5rem;
+    height:4rem;
     background-color: var(--nav-bg);
     position:fixed;
     width:100%;
     top:0;
     left:0;
-    z-index:10
+    z-index:100
 }
 
 
@@ -104,6 +108,7 @@ a:hover{
 /**********
 ** UTILITIES **
 ***********/
+
 .link-color{
     color:var(--link-color)
 }
@@ -123,11 +128,11 @@ a:hover{
     padding:0.9rem;
     align-items: flex-start;
 }
-.app-card :first-child{
+.app-card :first-child, section > p:first-child:not(.no-bb){
 font-size:  2rem;
 font-weight:600;
 margin-bottom: 0.5rem;
-border-bottom: 4px dashed red;
+border-bottom: 3px solid rgb(101, 73, 73);
 }
 .margin{
     margin:var(--app-margin);
@@ -188,7 +193,7 @@ nav li{
 
 nav button, ul.mobile-links > li > button{
     background-color: var(--nav-button-bg);
-    border-radius: 0.6rem ;
+    border-radius: 4px;
     padding: 0.7rem 1.2rem ;
     font-size:0.8rem;
 }
@@ -214,10 +219,17 @@ ul.mobile-links li{
     padding: 1rem 0;
 }
 main .hero-section{
-    background:url(./assets/images/batching/b11.jpeg) no-repeat top left;
+    background:url(./assets/images/heroes/bg_15.png) no-repeat top left;
     background-size: cover;
-    height:56rem;
+    height:47rem;
     place-items: center;
+}
+.blur-background {
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border-radius: 5px;
+padding:15px;
+border:0.5px dashed rgba(53, 30, 30, 0.4)
 }
 div.hero-text{
  max-width: 80%;
@@ -226,17 +238,36 @@ div.hero-text{
 .hero-text > *{
  text-align: center;
  margin-bottom:0.7rem;
- font-weight: 900;
+ font-weight: 600;
 
 }
 .hero-text button{
-    padding:0.4rem 3rem;
+    padding:0.8rem 4rem;
     background-color:var(--learn-more-bg);
-    border-radius: 0.7rem;
+    border-radius: 4px;
     font-weight: 500;
+    transition:transform 0.6s ease;
+}
+.hero-text button:hover{
+    transform: scale(1.1);
 }
 .tagline{
-    font-size: 3.5rem;
+    font-size: 2rem;
+    animation:3s colorFade_ ease-in-out forwards;
+}
+[alt="location icon"]{
+    filter: invert(100%) sepia(100%) grayscale(100%) brightness(100%);
+}
+.address{
+    font-style: normal;
+    display:inline-flex;
+    gap: 5px;
+    align-items: center;
+    animation: 3s colorFade__ ease-in-out forwards;
+
+}
+.subline{
+    animation: 3s colorFade___ ease-in-out forwards;
 
 }
 .hero-text :nth-child(n+2){
@@ -379,8 +410,6 @@ footer section:first-of-type{
 }
 
 @media screen and (max-width:890px){
-    :root{
-    }
     nav .nav-links{
     display:none
 }
@@ -435,6 +464,13 @@ div.carousel-area{
   width: 1100px;
   max-width: 100%;
   margin: auto;
+}
+.carousel-title{
+    box-shadow: 0px -1px 1px 1px rgba(79, 142, 204, 0.3);
+    min-height:70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .carousel-viewport {
@@ -507,3 +543,26 @@ a.carousel-dot{
 .carousel-dot.active{
  background:white
 }
+
+@keyframes colorFade_ {
+  from { color:rgba(0, 0, 0, 1)
+ }
+  to { color:rgba(251, 242, 242, 0.9);
+ }
+}
+
+
+@keyframes colorFade__ {
+  from { color:rgba(18, 7, 7, 0.9)
+ }
+  to { color:rgba(243, 231, 231, 0.9);
+ }
+}
+
+@keyframes colorFade___ {
+  from { color:rgba(18, 7, 7, 0.8)
+ }
+  to { color:rgba(222, 206, 206, 0.8);
+ }
+}
+
