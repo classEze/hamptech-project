@@ -1,11 +1,28 @@
 const copyrightTag = document.querySelector("footer p#site-copyright");
 const hamburger = document.querySelector("p.mobile-icons img");
 const mobileMenu = document.querySelector("ul.mobile-links");
+const heroSection = document.querySelector("main .hero-section");
 
+// const backgroundImages = [
+//   "./assets/images/heroes/bg_1.webp",
+//   "./assets/images/heroes/bg_6.jpg",
+//   "./assets/images/heroes/bg_8.webp",
+//   "./assets/images/heroes/bg_12.jpg",
+//   "./assets/images/heroes/bg_13.webp",
+//   "./assets/images/heroes/bg_15.png",
+//   "./assets/images/heroes/bg_16.jpg"
+// ]
+
+// function generateRandomNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// heroSection.style.backgroundImage = `url(${backgroundImages[generateRandomNumber(0, backgroundImages.length - 1)]})`
 
 
 document.addEventListener("DOMContentLoaded" , function(e){
 copyrightTag.innerHTML += `${new Date().getFullYear()}, Hamptech Projects Limited`;
+
 
 
 hamburger.addEventListener("click", (evt) => {
